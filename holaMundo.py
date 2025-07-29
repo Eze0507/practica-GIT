@@ -102,7 +102,7 @@ palabra_invertida = ''.join(lista_palabra)
 print(f'la palabra invertida es: {palabra_invertida}')"""
 
 #contador de palabras
-print('----------CANTIDAD DE PALABRAS POR PALABRA---------')
+"""print('----------CANTIDAD DE PALABRAS POR PALABRA---------')
 texto = input('indroduce una oracion: ')
 
 texto = texto.lower()
@@ -122,7 +122,7 @@ for palabra in texto:
         dic[palabra] = 1
 
 for palabra, cantidad in dic.items():
-    print(f"la palabra '{palabra}' se repite {cantidad} veces")
+    print(f"la palabra '{palabra}' se repite {cantidad} veces")"""
     
 #convertir un decimal a binario
 """print("----------convertir un numero decimal a binario----------")
@@ -151,7 +151,19 @@ r = expresion_equilibrada(expr)
 print(f"{r}")"""
 
 #eliminar caracteres
+def eliminar_caracteres(n, c):
+    r = ""
+    for caracter in n:
+        if caracter != c :
+            r = r + caracter
+    return r
 
+print("eliminar el siguiente caracter de la siguiente palabra")
+palabra = input("inserte una palabra: ")
+caracter = input("inserte caracter a eliminar: ")
+resultado = eliminar_caracteres(palabra, caracter)
+print(resultado)
+            
 
 
 
