@@ -158,7 +158,7 @@ def eliminar_caracteres(n, c):
             r = r + caracter
     return r
 
-print("eliminar carcateres iguales")
+print("eliminar caracteres de una palabra")
 palabra = input("inserte una palabra: ")
 caracter = input("inserte caracter a eliminar: ")
 resultado = eliminar_caracteres(palabra, caracter)
